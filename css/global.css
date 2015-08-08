@@ -68,11 +68,17 @@ a:hover, a:active, a:link, a::after {
 	margin-top: 0;
 }
 
+#grid-area {
+	width:'';
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
 #grid {
 	margin-top: 50px;
 	width: '';
 	height: '';
-	text-align: center;
 }
 
 .dotBox {
@@ -117,9 +123,14 @@ a:hover, a:active, a:link, a::after {
 	top: 0;
 }
 
+#mobile-warning {
+	visibility: hidden;
+}
+
 @media (max-width: 400px) {
-	#canvas { visibility: hidden }
-	#grid { visibility: hidden }
-	h1 { font-size: 30px }
-	h2 { font-size: 22px }
+	#mobile-warning { visibility: visible; }
+	#canvas { visibility: hidden; }
+	#grid-area { visibility: hidden; }
+	h1 { font-size: 30px; }
+	h2 { font-size: 22px; }
 }

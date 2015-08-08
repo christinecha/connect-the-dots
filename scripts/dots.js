@@ -1,17 +1,22 @@
 //create a 12 dotBoxes spread evenly across the window
+function getGridAreaSize(){
+	$('#grid-area').width($(window).width() * .8);
+}
+
 function getBoxSize(){
-	var boxWidth = $(window).width() / 30;
+	var boxWidth = $('#grid-area').width() / 30;
 	return boxWidth;
 };
 
 function createBoxes(){
-	for (i = 299; i >= 0; i--) {
+	for (i = 449; i >= 0; i--) {
 		$('#grid').append("<div class='dotBox'><div class='dotarea'><div class='dot'></div></div></div>");
 		$('.dotBox').css('width',getBoxSize());
 		$('.dotBox').css('height',getBoxSize());
 	};
 };
 
+getGridAreaSize();
 getBoxSize();
 createBoxes();
 

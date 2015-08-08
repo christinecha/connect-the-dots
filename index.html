@@ -12,7 +12,7 @@
 	<!--STYLESHEETS-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="global.css" type="text/css" />
+	<link rel="stylesheet" href="css/global.css" type="text/css" />
 
 	<!--SCRIPTS-->
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -24,20 +24,22 @@
 </head>
 
 <body>
-	<div class="background-index">
-	</div>
 	<svg id="canvas" width="100%" height="100%">
     <line class="line original" x1="0" y1="0" x2="0" y2="0" />
 	</svg>
 	<div class="container-fluid">
 		<div class="splash">
-			<h1>christine cha</h1>
-			<h2>building beautiful experiences, <a href="">online</a> and offline</h3>
+			<h1>connect the dots</h1>
+			<a href="http://christinecha.github.io/portfolio/"><h2>by christine cha</h2></a>
+			<br>
+			<p id="mobile-warning"> Sorry - this kind of functionality sucks on mobile! Please view it on a desktop for best results. </p>
 		</div>
 	</div>
-	<div id="grid">
+	<div id="grid-area">
+		<div id="grid">
+		</div>
 	</div>
-  <script src="dots.js"></script>
+  <script src="scripts/dots.js"></script>
 </body>
 
 </html>
